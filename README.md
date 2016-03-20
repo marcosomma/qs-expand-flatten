@@ -1,7 +1,5 @@
 # expand-flatten
 
-[![Build Status](https://travis-ci.org/crysalead-js/expand-flatten.svg?branch=master)](https://travis-ci.org/crysalead-js/expand-flatten)
-
 Conversion functions between hash objects and objects.
 
 ## API
@@ -13,13 +11,17 @@ List of methods:
 **Arguments:**
 
   * `object` *Object* The hash object to expand.
+  * `separator` *String* The digit used as separator
 
 **Return value:** The expanded object.
 
 **Syntax:**
 
 ```js
-expand({ 'some.very.deep.prop': true });
+expand({ 'some.very.deep.prop': true }, '.');
+// => result: { some: { very: { deep: { prop: true } } } }
+
+expand({ 'some-very-deep-prop': true }, '-');
 // => result: { some: { very: { deep: { prop: true } } } }
 ```
 
@@ -38,7 +40,3 @@ expand({ 'some.very.deep.prop': true });
 flatten({ some: { very: { deep: { prop: true } } } });
 // => result: { 'some.very.deep.prop': true }
 ```
-
-## Acknowledgement
-
-Sorry I don't remember from where I copy pasted this code from. Don't hesitate to let me know.

@@ -4,7 +4,7 @@
  * @param  Object object The object to expand.
  * @return Object        The expanded object.
  */
-function expand(object) {
+function expand(object, separator) {
   var path, key, parts, pointer, expanded = {};
   for (path in object) {
     value = object[path];
@@ -13,7 +13,7 @@ function expand(object) {
     if (path.indexOf('[') >= 0) {
       path = path.replace(/\[/g, '[.').replace(/]/g, '');
     }
-    parts = path.split('.');
+    parts = path.split(separator);
 
     while (parts.length - 1) {
       key = parts.shift();

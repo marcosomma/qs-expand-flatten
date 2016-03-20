@@ -4,7 +4,7 @@
  * @param  mixed   value The value to check.
  * @return Boolean
  */
-function isNotObject(value) {
+function isNotObject(value, separat) {
    return value === null || typeof value !== 'object';
 }
 /**
