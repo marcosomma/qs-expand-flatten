@@ -1,11 +1,11 @@
 {
-  "name": "expand-flatten",
+  "name": "qs-expand-flatten",
   "version": "1.0.1",
   "description": "Conversion functions between hash objects and objects.",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/crysalead-js/expand-flatten.git"
+    "url": "git+ssh://git@github.com:marcosomma/qs-expand-flatten.git"
   },
   "devDependencies": {
     "jasmine": "^2.3",
