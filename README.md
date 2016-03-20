@@ -13,7 +13,7 @@ List of methods:
 **Arguments:**
 
   * `object` *Object* The hash object to expand.
-  * `separator` *String* The digit used as separator
+  * `separator` *String* The digit used as separator.
 
 **Return value:** The expanded object.
 
@@ -32,6 +32,7 @@ expand({ 'some-very-deep-prop': true }, '-');
 **Arguments:**
 
   * `object` *Object*   The object to flatten.
+  * `separator` *String* The digit used as separator.
   * `check`  *Function* The checking handler (default: isNotObject).
 
 **Return value:** The flattened hash object.
@@ -39,6 +40,9 @@ expand({ 'some-very-deep-prop': true }, '-');
 **Syntax:**
 
 ```js
-flatten({ some: { very: { deep: { prop: true } } } });
+flatten({ some: { very: { deep: { prop: true } } } }, '.');
 // => result: { 'some.very.deep.prop': true }
+
+flatten({ some: { very: { deep: { prop: true } } } }, '-');
+// => result: { 'some-very-deep-prop': true }
 ```

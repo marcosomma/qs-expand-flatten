@@ -4,7 +4,7 @@
  * @param  mixed   value The value to check.
  * @return Boolean
  */
-function isNotObject(value, separat) {
+function isNotObject(value) {
    return value === null || typeof value !== 'object';
 }
 /**
@@ -14,7 +14,7 @@ function isNotObject(value, separat) {
  * @param  Function check  The checking handler (default: isNotObject).
  * @return Object          The flattened object.
  */
-function flatten(object, check) {
+function flatten(object, separator, check) {
   var i, j, value, result, flattened = {};
   check = check || isNotObject;
 
@@ -24,7 +24,7 @@ function flatten(object, check) {
       flattened[i] = value;
       continue;
     }
-    result = flatten(value, check);
+    result = flatten(value, separator, check);
 
     if (Array.isArray(value)) {
       for (j in result) {
@@ -32,7 +32,7 @@ function flatten(object, check) {
       }
     } else {
       for (j in result) {
-        flattened[i + '.' + j] = result[j];
+        flattened[i + separator + j] = result[j];
       }
     }
   }
