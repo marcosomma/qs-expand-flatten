@@ -8,7 +8,7 @@ Conversion functions between hash objects and objects.
 
 List of methods:
 
-### expand(object)
+### expand(object, separator)
 
 **Arguments:**
 
@@ -27,7 +27,7 @@ expand({ 'some-very-deep-prop': true }, '-');
 // => result: { some: { very: { deep: { prop: true } } } }
 ```
 
-### flatten(object, check)
+### flatten(object, separator, check)
 
 **Arguments:**
 

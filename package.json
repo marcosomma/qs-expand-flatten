@@ -1,6 +1,6 @@
 {
   "name": "qs-expand-flatten",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Conversion functions between hash objects and objects.",
   "license": "ISC",
   "repository": {
