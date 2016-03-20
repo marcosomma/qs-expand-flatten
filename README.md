@@ -1,4 +1,5 @@
-# expand-flatten
+# qs-expand-flatten
+[![Build Status](https://travis-ci.org/marcosomma/qs-expand-flatten.svg?branch=master)](https://travis-ci.org/marcosomma/qs-expand-flatten)
 
 Conversion functions between hash objects and objects.
 
