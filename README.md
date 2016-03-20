@@ -1,4 +1,5 @@
 # qs-expand-flatten
+[![NPM](https://nodei.co/npm/qs-expand-flatten.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/qs-expand-flatten/)
 [![Build Status](https://travis-ci.org/marcosomma/qs-expand-flatten.svg?branch=master)](https://travis-ci.org/marcosomma/qs-expand-flatten)
 
 Conversion functions between hash objects and objects.
