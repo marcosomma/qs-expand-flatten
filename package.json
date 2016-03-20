@@ -1,0 +1,18 @@
+m{
+  "name": "expand-flatten",
+  "version": "1.0.0",
+  "description": "Conversion functions between hash objects and objects.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/crysalead-js/expand-flatten.git"
+  },
+  "devDependencies": {
+    "jasmine": "^2.3"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Marco Somma <mak.so1979@gmail.com> (http://marcosomma.xyz/)",
+  "license": "ISC",
+}
