@@ -1,11 +1,11 @@
 {
   "name": "expand-flatten",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Conversion functions between hash objects and objects.",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "http://github.com/crysalead-js/expand-flatten.git"
+    "url": "git+ssh://git@github.com/crysalead-js/expand-flatten.git"
   },
   "devDependencies": {
     "jasmine": "^2.3",
@@ -14,5 +14,19 @@
   "scripts": {
     "test": "node spec/jasmine-runner.js"
   },
-  "author": "Marco Somma <mak.so1979@gmail.com> (http://marcosomma.xyz/)"
+  "author": "Marco Somma <mak.so1979@gmail.com> (http://marcosomma.xyz/)",
+  "bugs": {
+    "url": "https://github.com/crysalead-js/expand-flatten/issues"
+  },
+  "homepage": "https://github.com/crysalead-js/expand-flatten#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "keywords": [
+    "querystring",
+    "expand",
+    "flatten"
+  ]
 }
