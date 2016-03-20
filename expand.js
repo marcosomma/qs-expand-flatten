@@ -2,6 +2,7 @@
  * Expands a "hash" object an object.
  *
  * @param  Object object The object to expand.
+ * @param  String separator The digit used as separator.
  * @return Object        The expanded object.
  */
 function expand(object, separator) {
